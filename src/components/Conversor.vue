@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col align-self-center">
                 <div class="input-group mb-4">
-                <input type="number" class="form-control" v-model="cantidad1" placeholder="Introduzca una cantidad" v-on:change="Convertir(de,para)">
+                <input type="number" class="form-control" v-model="cantidad1" placeholder="Introduzca una cantidad" v-on:keyup="Convertir(de,para)">
                 <select class="form-select" id="inputGroupSelect01" v-model="de" v-on:change="Convertir(de,para)">
                 <option v-for="(coin,index) in Formato" v-bind:key="index">{{coin}}</option>
                 </select>
